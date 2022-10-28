@@ -27,6 +27,9 @@ function Screenlock() {
 
   return (
     <div className="background">
+      <p className={`greetinTextHide ${hide ? "greetigTextFadeIn " : ""}`}>
+        Welcome
+      </p>
       <div className={`lock ${hide ? "hide" : ""}`}>
         <div className={`container ${error ? "containerError" : ""}`}>
           <p className={`errorLabelHide ${error ? "errorLabelShow" : ""}`}>
@@ -133,9 +136,6 @@ function Screenlock() {
           </button>
         </div>
       </div>
-      <p className={`greetinTextHide ${hide ? "greetigTextFadeIn " : ""}`}>
-        Welcome
-      </p>
     </div>
   );
 }
